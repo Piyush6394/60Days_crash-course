@@ -1,0 +1,28 @@
+
+
+#employeeForm{
+    border: 1px solid black;
+    width: 30%;
+    
+    
+    padding: 10px;
+    margin-top: 15px;
+
+}
+
+#employeeForm input{
+    margin-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: pink;
+  }
