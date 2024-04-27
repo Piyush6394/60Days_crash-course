@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.filters{
+    margin-bottom: 20px;
+}
+.filters label{
+    margin-right: 10px;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.table th, table td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.pagination{
+    margin-top: 20px;
+
+}
+
+.pagination button{
+    padding: 8px 16px ;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.pagination button (disabled){
+    opacity: 0.5;
+    cursor: not-allowed;
+}
