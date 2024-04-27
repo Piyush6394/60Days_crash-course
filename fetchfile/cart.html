@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script>
+        // log in Authenticated Start
+        let userDetails = JSON.parse(localStorage.getItem("user"))
+
+        if (!userDetails) {
+            alert("LogIn Please")
+            window.location.href = "index.html"
+
+        }
+        // log in Authenticated end
+    </script>
+
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <div id="root">
+        <div id="navbar">
+            <div>
+                <h1>E-Cart</h1>
+            </div>
+            <div id="navbar1">
+                <div>
+                    <p><a href="signUp.html">SignUp</a></p>
+                </div>
+                <div>
+                    <p><a href="login.html">LogIn</a></p>
+                </div>
+                <div id="userName"></div>
+            </div>
+
+        </div>
+        <div id="productCart">
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="cart.js" type="module"></script>

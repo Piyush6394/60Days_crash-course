@@ -1,0 +1,50 @@
+body{
+    width: 80%;
+    margin: auto;
+    background-color: blueviolet;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+    padding: 50px;
+  }
+  
+  #root {
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+  
+  #display{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    padding: 50px;
+    gap: 15px;
+  }
+  #Heading{
+    font-size: 24px;
+  }
+  #display div {
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  
+  #root > div:nth-child(1){
+    padding: 30px;
+  }
+  
+  label{
+    font-size: larger;
+  }
+  
+  select {
+    background-color: white; 
+    color: black; 
+    border: 1px solid white; 
+    border-radius: 10px;
+    padding: 5px;
+    width: 200px;
+    font-size: medium;
+    border: none;
+    margin-top: 20px;
+  }

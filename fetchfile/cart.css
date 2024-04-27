@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: teal;
+    color: white;
+    padding-left: 25px;
+}
+
+#navbar1 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-right: 25px;
+}
+
+#navbar1 a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar1 a:hover{
+    text-decoration: underline;
+}
+
+#productCart {
+    padding: 20px 10%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#productCart div {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#productCart div p {
+    margin: 4px 0 6px 0;
+}
+
+#productCart img{
+    width: 250px;
+    height: 250px;
+}
+
+button {
+    background-color: teal;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px 20px;
+}
+#logout button {
+    background-color: teal;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}

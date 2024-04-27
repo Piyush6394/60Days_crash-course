@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        body {
+            background-color: teal;
+        }
+
+        #root {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #formDiv {
+            background-color: #efe9e9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 6px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="submit"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #030303;
+        }
+
+        input[type="submit"] {
+            background-color: teal;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div id="formDiv">
+            <h2>Sign Up</h2>
+            <form id="form">
+                <label for="name"> Name</label><br>
+                <input id="name" name="name" type="text" placeholder="Name" required>
+                <br>
+                <label for="email">Email</label><br>
+                <input id="email" name="email" type="text" placeholder="Email" required>
+                <br>
+                <label for="pass">Password</label><br>
+                <input id="pass" name="password" type="password" placeholder="password" required minlength="8">
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="signup.js" type="module">
+
+</script>
