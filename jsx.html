@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSX with Conditional Rendering</title>
+</head>
+<body>
+    <div id="main"></div>
+
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // Simple 
+        const sParagraph = <p>This is the simple JSX element text which is shown </p>;
+
+        // Dynamic text
+        const dText = "this one is dynamic one";
+        const dParagraph = <p>{dText}</p>;
+
+        
+        const condition = true;
+        const paraA = <p>This is conditional text 1</p>;
+        const paraB = <p>This is conditional text 1</p>;
+        const cParagraph = condition ? paraA : paraB;
+
+        
+        const app = (
+            <div>
+                {sParagraph}
+                {dParagraph}
+                {cParagraph}
+            </div>
+        );
+
+        
+        ReactDOM.render(
+            app,
+            document.getElementById('main')
+        );
+    </script>
+</body>
+</html>
