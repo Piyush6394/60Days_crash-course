@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product view</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Product view</h1>
+    </header>
+    <main>
+        <div class="new-filters">
+            <label for="newCategory">Filter by Category:</label>
+            <select id="newCategory" onchange="filterProducts()">
+                <option value="all">All Categories</option>
+            </select>
+            <label for="newSearch">Search:</label>
+            <input type="text" id="newSearch" oninput="searchProducts()" placeholder="Search products...">
+            <label for="newSort">Sort by Price:</label>
+            <select id="newSort" onchange="sortProducts()">
+                <option value="asc">Increasing</option>
+                <option value="desc">decreasing</option>
+            </select>
+        </div>
+        <div id="newProductList" class="new-product-list">
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
