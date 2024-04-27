@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌎 Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="root">
+        <div>
+            <label id="Heading" for="population">Choose</label><br>
+            <select id="population" onchange="sorting()" >
+                <option value="">Choose Range</option>
+                <option value="decreasing">Ascending</option>
+                <option value="increasing">Descending</option>
+            </select>
+        </div>
+        <div id="display"></div>
+    </div>
+</body>
+
+</html>
+<script src="index.js"></script>
